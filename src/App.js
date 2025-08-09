@@ -3,6 +3,8 @@ import React from "react";
 import Example from "./Example";
 import Xyz from "./hello";
 import OutlineTypesExample from "./bootstraptest";
+import Example2 from "./example2.js";
+import Greeting from "./greetings.js";
 
 
 function App(){
@@ -15,9 +17,11 @@ function App(){
       <Example/>
       <Xyz/>
       <OutlineTypesExample/>
+      <Example2/>
+      <Greeting/>
     </div>
   )
 
 }
 
-export default App
+export default App;
