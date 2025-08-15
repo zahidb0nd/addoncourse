@@ -1,0 +1,25 @@
+body {
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.App h1 {
+  font-size: 3rem;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Adds space between cards */
+}
