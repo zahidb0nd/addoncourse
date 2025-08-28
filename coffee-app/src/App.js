@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Coffee App</h1>
+      <h1>Coffee App☕</h1>
       <div
         style={{
           display: "flex",
@@ -60,7 +60,7 @@ function App() {
 
       {/* CART */}
       <div style={{ marginTop: "30px" }}>
-        <h2>Cart</h2>
+        <h2>Cart🛒</h2>
         {cart.length === 0 ? (
           <p>No items in cart.</p>
         ) : (
