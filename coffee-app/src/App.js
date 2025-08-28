@@ -1,93 +1,80 @@
-import React from "react"
+import React, { useState } from "react";
 
-function Button({type}){
-
-  const styles = {
-
-    primary: { background:"blue",color:"white",padding:"10px"},
-
-    secondary:{ background:"grey",color:"black",padding:"10px"}
-
-  }
-
-   
-
-  return(
-
-    <div>
-
-      <button style={styles[type]}>{type}Button</button>
-
+function CoffeeCard({ title, price, onAddToCart }) {
+  return (
+    <div
+      style={{
+        border: "1px solid #ccc",
+        margin: "10px",
+        borderRadius: "10px",
+        textAlign: "center",
+        padding: "15px",
+        width: "200px",
+      }}
+    >
+      <h3>{title}</h3>
+      <p>Price: ${price}</p>
+      <button
+        onClick={() => onAddToCart({ title, price })}
+        style={{
+          backgroundColor: "green",
+          color: "white",
+          padding: "8px 12px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}
+      >
+        Add to cart
+      </button>
     </div>
-
-  )
-
+  );
 }
 
- 
+function App() {
+  const [cart, setCart] = useState([]);
 
-function Card({title,price}){
+  const handleAddToCart = (item) => {
+    setCart((prevCart) => [...prevCart, item]);
+  };
 
-  return(
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>Coffee App</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <CoffeeCard title="Latte" price={6} onAddToCart={handleAddToCart} />
+        <CoffeeCard title="Americano" price={7} onAddToCart={handleAddToCart} />
+        <CoffeeCard title="Frappe" price={4} onAddToCart={handleAddToCart} />
+        <CoffeeCard
+          title="Cappuccino"
+          price={10}
+          onAddToCart={handleAddToCart}
+        />
+      </div>
 
-    <div style={{background:"red",    border:"1px solid #ddd", padding:"10px",margin:"10px",borderRadius:"10px"}}>
-
-     <h3>{title}</h3>
-
-     <p>Price : $ {price}</p>
-
-     <button style={{background:"green",color:"white"}}>Buy Now</button>
-
+      {/* CART */}
+      <div style={{ marginTop: "30px" }}>
+        <h2>Cart</h2>
+        {cart.length === 0 ? (
+          <p>No items in cart.</p>
+        ) : (
+          <ul>
+            {cart.map((item, index) => (
+              <li key={index}>
+                {item.title} - ${item.price}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
-
-  )
-
+  );
 }
 
- 
-
-function ResponsiveBox(){
-
-  return(
-
-    <div style={ {width:"80%",margin:"auto",padding:"20px",
-
-      background:"lightblue"
-
-    }}>
-
-      <h2>i am Resposnive</h2>
-
-      <p>Resize the Screen</p>
-
-    </div>
-
-  )
-
-}
-
- 
-
-function App(){
-
-  return(
-
-    <div>
-
-    <Button type="primary" />
-
-    <Button type="secondary" />
-
-    <Card title="Latte" price="4" />
-
-    <ResponsiveBox />
-
-    </div>
-
-   );
-
-}
 export default App;
-
-
-
