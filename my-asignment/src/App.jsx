@@ -1,14 +1,15 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Products from "./pages/Products.jsx";
-import ProductDetail from "./pages/ProductDetail.jsx";
-import FormDemo from "./pages/FormDemo.jsx";
-import Users from "./pages/Users.jsx";
-import CardInline from "./pages/CardInline.jsx";
-import CardStylesheet from "./pages/CardStylesheet.jsx";
-import NotFound from "./pages/NotFound.jsx";
+import Navbar from "./assets/components/navbar.jsx";
+
+import About from "./about.jsx";
+import Home from "./home.jsx";
+import Products from "./products.jsx";
+import ProductDetail from "./productDetail.jsx";
+import FormDemo from "./formDemo.jsx";
+import Users from "./users.jsx";
+import CardInline from "./cardInLine.jsx";
+import CardStylesheet from "./cardStylesheet.jsx";
+import NotFound from "./notfound.jsx";
 
 export default function App() {
   return (
