@@ -1,8 +1,8 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Navbar from './assets/components/navbar'
-import ProductDetails from './productdetail'
-import Products from './products'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './assets/components/navbar';
+import ProductDetails from './productdetail';
+import Products from './products';
 
 function App() {
   return (
@@ -16,6 +16,6 @@ function App() {
         <Route path="/products/:id" element={<ProductDetails />} />
       </Routes>
     </div>
-  )
+  );
 }
-export default App
+export default App;

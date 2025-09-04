@@ -1,8 +1,8 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 function ProductDetails() {
-  const { id } = useParams()
+  const { id } = useParams();
 
   return (
     <div>
@@ -13,7 +13,7 @@ function ProductDetails() {
         </p>
       </section>
     </div>
-  )
+  );
 }
 
-export default ProductDetails
+export default ProductDetails;
