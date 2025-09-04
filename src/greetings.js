@@ -2,13 +2,9 @@ import React from "react";
 
 function Greeting() {
   const customer_name = "Jonathan";
-  const hour = new Date().getHours(); 
-  const greetingMsg = 
-    hour < 12 
-      ? "Good Morning" 
-      : hour < 17 
-        ? "Good Afternoon" 
-        : "Good Evening"; //
+  const hour = new Date().getHours();
+  const greetingMsg =
+    hour < 12 ? "Good Morning" : hour < 17 ? "Good Afternoon" : "Good Evening"; //
 
   return (
     <div>
