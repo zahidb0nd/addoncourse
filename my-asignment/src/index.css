@@ -20,9 +20,9 @@ body {
     Roboto,
     Ubuntu,
     Cantarell,
-    "Helvetica Neue",
+    'Helvetica Neue',
     Arial,
-    "Noto Sans",
+    'Noto Sans',
     sans-serif;
   color: var(--text);
   background: var(--bg);

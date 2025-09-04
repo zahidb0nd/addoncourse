@@ -13,11 +13,7 @@
 .card {
   width: 300px;
   border-radius: 16px;
-  background-image: linear-gradient(
-    135deg,
-    var(--card-bg-start),
-    var(--card-bg-end)
-  );
+  background-image: linear-gradient(135deg, var(--card-bg-start), var(--card-bg-end));
   box-shadow: 0 10px 25px -12px var(--card-shadow);
   overflow: hidden;
   transition:

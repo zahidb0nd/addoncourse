@@ -4,5 +4,5 @@ export default function About() {
       <h1>About</h1>
       <p>Just a tiny About page.</p>
     </section>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import "./styles/card.css";
+import './styles/card.css'
 
 export default function CardStylesheet() {
   return (
@@ -10,5 +10,5 @@ export default function CardStylesheet() {
         <button className="card-btn">Action</button>
       </div>
     </section>
-  );
+  )
 }

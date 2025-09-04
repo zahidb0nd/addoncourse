@@ -1,15 +1,15 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./assets/components/navbar.jsx";
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './assets/components/navbar.jsx'
 
-import About from "./about.jsx";
-import Home from "./home.jsx";
-import Products from "./products.jsx";
-import ProductDetail from "./productDetail.jsx";
-import FormDemo from "./formDemo.jsx";
-import Users from "./users.jsx";
-import CardInline from "./cardInLine.jsx";
-import CardStylesheet from "./cardStylesheet.jsx";
-import NotFound from "./notfound.jsx";
+import About from './about.jsx'
+import Home from './home.jsx'
+import Products from './products.jsx'
+import ProductDetail from './productDetail.jsx'
+import FormDemo from './formDemo.jsx'
+import Users from './users.jsx'
+import CardInline from './cardInLine.jsx'
+import CardStylesheet from './cardStylesheet.jsx'
+import NotFound from './notfound.jsx'
 
 export default function App() {
   return (
@@ -29,5 +29,5 @@ export default function App() {
         </Routes>
       </div>
     </>
-  );
+  )
 }
