@@ -1,19 +1,16 @@
 * {
   box-sizing: border-box;
 }
-
 :root {
   --bg: #fff;
   --muted: #f4f4f5;
   --text: #111827;
 }
-
 html,
 body,
 #root {
   height: 100%;
 }
-
 body {
   margin: 0;
   font-family:
@@ -23,14 +20,13 @@ body {
     Roboto,
     Ubuntu,
     Cantarell,
-    'Helvetica Neue',
+    "Helvetica Neue",
     Arial,
-    'Noto Sans',
+    "Noto Sans",
     sans-serif;
   color: var(--text);
   background: var(--bg);
 }
-
 .nav {
   display: flex;
   gap: 12px;
@@ -42,7 +38,6 @@ body {
   top: 0;
   z-index: 10;
 }
-
 .nav a {
   padding: 8px 10px;
   border-radius: 10px;
@@ -50,47 +45,40 @@ body {
   color: inherit;
   border: 1px solid transparent;
 }
-
 .nav a.active {
   font-weight: 700;
   background: #fff;
   border-color: #e5e7eb;
 }
-
 .container {
   max-width: 1024px;
   margin: 0 auto;
   padding: 16px;
 }
-
 .btn {
   padding: 8px 14px;
-  border: 1px solid #558de1;
+  border: 1px solid #d1d5db;
   border-radius: 12px;
   background: #fff;
   cursor: pointer;
 }
-
 .grid {
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
-
 .card {
-  border: 1px solid #2255bc;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
   background: #fff;
 }
-
 input {
   padding: 8px 10px;
   border-radius: 10px;
-  border: 1px solid #091c38;
+  border: 1px solid #d1d5db;
 }
-
 label {
   display: flex;
   flex-direction: column;

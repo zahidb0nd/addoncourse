@@ -1,21 +1,51 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <div>
-      <nav className="nav">
-        <NavLink to="/home">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="products">Products</NavLink>
-        <NavLink>Form</NavLink>
-        <NavLink>Users</NavLink>
-        <NavLink>Card(Inline)</NavLink>
-        <NavLink>Home(Stylesheet)</NavLink>
-        <NavLink>Login</NavLink>
-      </nav>
-    </div>
+    <nav className="nav">
+      <NavLink
+        to="/"
+        end
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        About
+      </NavLink>
+      <NavLink
+        to="/products"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        Products
+      </NavLink>
+      <NavLink
+        to="/form"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        Form
+      </NavLink>
+      <NavLink
+        to="/users"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        Users
+      </NavLink>
+      <NavLink
+        to="/card-inline"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        Card (Inline)
+      </NavLink>
+      <NavLink
+        to="/card-css"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
+        Card (Stylesheet)
+      </NavLink>
+    </nav>
   );
 }
-
-export default Navbar;
